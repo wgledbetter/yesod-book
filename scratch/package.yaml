@@ -1,0 +1,13 @@
+name: scratch
+
+ghc-options:
+  - -Wall
+  - -Werror
+
+dependencies:
+  - yesod-book
+  - base
+
+executables:
+  ex00:
+    main: Ex00_Empty.hs

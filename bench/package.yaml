@@ -1,0 +1,18 @@
+name: bench
+
+dependencies:
+  - yesod-book
+  - base
+  - criterion
+
+ghc-options:
+  - -rtsopts
+  - -threaded
+  - -O2
+  - -fforce-recomp
+  - -Wall
+  - -Werror
+
+executables:
+  bench:
+    main: Bench.hs

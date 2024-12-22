@@ -1,0 +1,24 @@
+name: tests
+
+dependencies:
+  - yesod-book
+  - base
+  - tasty
+  - tasty-hunit
+  - tasty-quickcheck
+
+ghc-options:
+  - -rtsopts
+  - -threaded
+  - -O2
+  - -fforce-recomp
+  - -Wall
+  - -Werror
+
+executables:
+  tests:
+    main: Test.hs
+
+tests:
+  test-main:
+    main: Test.hs
