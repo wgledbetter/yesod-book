@@ -8,4 +8,4 @@ ghc-options:
   - -Werror
 
 library:
-  source-dirs: src
+  source-dirs: .

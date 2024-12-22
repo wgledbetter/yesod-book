@@ -12,3 +12,7 @@ dependencies:
 executables:
   ex00:
     main: Ex00_HelloWorld.hs
+  ex01:
+    main: Ex01_Links.hs
+  ex02:
+    main: Ex02_JSON.hs
