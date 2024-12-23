@@ -8,6 +8,11 @@ dependencies:
   - yesod-book
   - base
   - yesod
+  - blaze-html
+  - shakespeare
+  - text
+  - blaze-builder
+  - http-types
 
 executables:
   ex00:
@@ -16,3 +21,5 @@ executables:
     main: Ex01_Links.hs
   ex02:
     main: Ex02_JSON.hs
+  ex03:
+    main: Ex03_Shakespeare.hs
