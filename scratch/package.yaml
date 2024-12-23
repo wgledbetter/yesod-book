@@ -23,3 +23,5 @@ executables:
     main: Ex02_JSON.hs
   ex03:
     main: Ex03_Shakespeare.hs
+  ex04:
+    main: Ex04_Widgets.hs
