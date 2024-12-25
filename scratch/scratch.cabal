@@ -20,6 +20,7 @@ executable ex00
     , http-types
     , shakespeare
     , text
+    , time
     , yesod
     , yesod-book
   default-language: Haskell2010
@@ -36,6 +37,7 @@ executable ex01
     , http-types
     , shakespeare
     , text
+    , time
     , yesod
     , yesod-book
   default-language: Haskell2010
@@ -52,6 +54,7 @@ executable ex02
     , http-types
     , shakespeare
     , text
+    , time
     , yesod
     , yesod-book
   default-language: Haskell2010
@@ -68,6 +71,7 @@ executable ex03
     , http-types
     , shakespeare
     , text
+    , time
     , yesod
     , yesod-book
   default-language: Haskell2010
@@ -84,6 +88,24 @@ executable ex04
     , http-types
     , shakespeare
     , text
+    , time
+    , yesod
+    , yesod-book
+  default-language: Haskell2010
+
+executable ex05
+  main-is: Ex05_Typeclass.hs
+  other-modules:
+      Paths_scratch
+  ghc-options: -Wall -Werror
+  build-depends:
+      base
+    , blaze-builder
+    , blaze-html
+    , http-types
+    , shakespeare
+    , text
+    , time
     , yesod
     , yesod-book
   default-language: Haskell2010

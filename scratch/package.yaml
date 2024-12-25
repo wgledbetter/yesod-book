@@ -13,6 +13,7 @@ dependencies:
   - text
   - blaze-builder
   - http-types
+  - time
 
 executables:
   ex00:
@@ -25,3 +26,5 @@ executables:
     main: Ex03_Shakespeare.hs
   ex04:
     main: Ex04_Widgets.hs
+  ex05:
+    main: Ex05_Typeclass.hs
