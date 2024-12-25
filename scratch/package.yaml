@@ -4,6 +4,13 @@ ghc-options:
   - -Wall
   - -Werror
 
+default-extensions:
+  - TemplateHaskell
+  - QuasiQuotes
+  - OverloadedStrings
+  - ViewPatterns
+  - TypeFamilies
+
 dependencies:
   - yesod-book
   - base
@@ -28,3 +35,5 @@ executables:
     main: Ex04_Widgets.hs
   ex05:
     main: Ex05_Typeclass.hs
+  ex06:
+    main: Ex06_Routing.hs

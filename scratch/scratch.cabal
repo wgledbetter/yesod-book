@@ -12,6 +12,12 @@ executable ex00
   main-is: Ex00_HelloWorld.hs
   other-modules:
       Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
   ghc-options: -Wall -Werror
   build-depends:
       base
@@ -29,6 +35,12 @@ executable ex01
   main-is: Ex01_Links.hs
   other-modules:
       Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
   ghc-options: -Wall -Werror
   build-depends:
       base
@@ -46,6 +58,12 @@ executable ex02
   main-is: Ex02_JSON.hs
   other-modules:
       Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
   ghc-options: -Wall -Werror
   build-depends:
       base
@@ -63,6 +81,12 @@ executable ex03
   main-is: Ex03_Shakespeare.hs
   other-modules:
       Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
   ghc-options: -Wall -Werror
   build-depends:
       base
@@ -80,6 +104,12 @@ executable ex04
   main-is: Ex04_Widgets.hs
   other-modules:
       Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
   ghc-options: -Wall -Werror
   build-depends:
       base
@@ -97,6 +127,35 @@ executable ex05
   main-is: Ex05_Typeclass.hs
   other-modules:
       Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
+  ghc-options: -Wall -Werror
+  build-depends:
+      base
+    , blaze-builder
+    , blaze-html
+    , http-types
+    , shakespeare
+    , text
+    , time
+    , yesod
+    , yesod-book
+  default-language: Haskell2010
+
+executable ex06
+  main-is: Ex06_Routing.hs
+  other-modules:
+      Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
   ghc-options: -Wall -Werror
   build-depends:
       base
