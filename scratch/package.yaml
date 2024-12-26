@@ -29,6 +29,8 @@ dependencies:
   - conduit
   - yesod-websockets
   - yesod-core
+  - units
+  - units-defs
 
 executables:
   ex00:
@@ -49,3 +51,5 @@ executables:
     main: Ex07_Streaming.hs
   ex08:
     main: Ex08_Websockets.hs
+  ex09:
+    main: Ex09_Units.hs
