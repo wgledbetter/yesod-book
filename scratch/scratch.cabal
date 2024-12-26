@@ -18,17 +18,22 @@ executable ex00
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010
 
 executable ex01
@@ -41,17 +46,22 @@ executable ex01
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010
 
 executable ex02
@@ -64,17 +74,22 @@ executable ex02
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010
 
 executable ex03
@@ -87,17 +102,22 @@ executable ex03
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010
 
 executable ex04
@@ -110,17 +130,22 @@ executable ex04
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010
 
 executable ex05
@@ -133,17 +158,22 @@ executable ex05
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010
 
 executable ex06
@@ -156,15 +186,76 @@ executable ex06
       OverloadedStrings
       ViewPatterns
       TypeFamilies
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base
     , blaze-builder
     , blaze-html
+    , conduit
+    , containers
     , http-types
     , shakespeare
+    , stm
     , text
     , time
     , yesod
     , yesod-book
+    , yesod-core
+    , yesod-websockets
+  default-language: Haskell2010
+
+executable ex07
+  main-is: Ex07_Streaming.hs
+  other-modules:
+      Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
+  build-depends:
+      base
+    , blaze-builder
+    , blaze-html
+    , conduit
+    , containers
+    , http-types
+    , shakespeare
+    , stm
+    , text
+    , time
+    , yesod
+    , yesod-book
+    , yesod-core
+    , yesod-websockets
+  default-language: Haskell2010
+
+executable ex08
+  main-is: Ex08_Websockets.hs
+  other-modules:
+      Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
+  build-depends:
+      base
+    , blaze-builder
+    , blaze-html
+    , conduit
+    , containers
+    , http-types
+    , shakespeare
+    , stm
+    , text
+    , time
+    , yesod
+    , yesod-book
+    , yesod-core
+    , yesod-websockets
   default-language: Haskell2010

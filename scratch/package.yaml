@@ -3,6 +3,9 @@ name: scratch
 ghc-options:
   - -Wall
   - -Werror
+  - -threaded
+  - -rtsopts
+  - -O2
 
 default-extensions:
   - TemplateHaskell
@@ -21,6 +24,11 @@ dependencies:
   - blaze-builder
   - http-types
   - time
+  - containers
+  - stm
+  - conduit
+  - yesod-websockets
+  - yesod-core
 
 executables:
   ex00:
@@ -37,3 +45,7 @@ executables:
     main: Ex05_Typeclass.hs
   ex06:
     main: Ex06_Routing.hs
+  ex07:
+    main: Ex07_Streaming.hs
+  ex08:
+    main: Ex08_Websockets.hs
