@@ -1,8 +1,24 @@
 {-# LANGUAGE DataKinds #-}
 
--- I did something like this at Sandia and was pretty pleased with myself.
-
-module Main where
+module Units
+  ( Angle (..),
+    toDegrees,
+    toRadians,
+    Distance (..),
+    toMeters,
+    toFeet,
+    toYards,
+    toMiles,
+    toNauticalMiles,
+    Mass (..),
+    toOunces,
+    toPounds,
+    toGrams,
+    Energy (..),
+    toKiloCalories,
+    toKiloJoules,
+  )
+where
 
 import qualified Data.Dimensions.SI as D
 import Data.Metrology
@@ -55,6 +71,14 @@ toYards :: (Fractional a) => Distance a -> Distance a
 toYards (Yards y) = Yards y
 toYards d = Yards $ toDistanceUnit d # Yard
 
+toMiles :: (Fractional a) => Distance a -> Distance a
+toMiles (Miles m) = Miles m
+toMiles d = Miles $ toDistanceUnit d # Mile
+
+toNauticalMiles :: (Fractional a) => Distance a -> Distance a
+toNauticalMiles (NauticalMiles n) = NauticalMiles n
+toNauticalMiles d = NauticalMiles $ toDistanceUnit d # NauticalMile
+
 -- Mass ------------------------------------------------------------------------
 
 data Mass a
@@ -71,6 +95,14 @@ toMassUnits (Grams g) = g % Gram
 toOunces :: (Fractional a) => Mass a -> Mass a
 toOunces (Ounces o) = Ounces o
 toOunces m = Ounces $ toMassUnits m # Ounce
+
+toPounds :: (Fractional a) => Mass a -> Mass a
+toPounds (Pounds p) = Pounds p
+toPounds m = Pounds $ toMassUnits m # Pound
+
+toGrams :: (Fractional a) => Mass a -> Mass a
+toGrams (Grams g) = Grams g
+toGrams m = Grams $ toMassUnits m # Gram
 
 -- Energy ----------------------------------------------------------------------
 
@@ -89,18 +121,10 @@ toEnergyUnits ::
 toEnergyUnits (KiloCalories kc) = kc % FoodCalorie
 toEnergyUnits (KiloJoules kj) = kj % (Kilo :@ Joule)
 
+toKiloCalories :: (Fractional a) => Energy a -> Energy a
+toKiloCalories (KiloCalories kc) = KiloCalories kc
+toKiloCalories e = KiloCalories $ toEnergyUnits e # FoodCalorie
+
 toKiloJoules :: (Fractional a) => Energy a -> Energy a
 toKiloJoules (KiloJoules kj) = KiloJoules kj
 toKiloJoules e = KiloJoules $ toEnergyUnits e # Kilo :@ Joule
-
--- Main ------------------------------------------------------------------------
-
-main :: IO ()
-main = do
-  print $ toDegrees (Radians (pi :: Double))
-  print $ toRadians (Degrees (45 :: Double))
-  print $ toMeters (Feet (12 :: Double))
-  print $ toFeet (Meters (3.45 :: Double))
-  print $ toYards (Meters (1 :: Double))
-  print $ toOunces (Grams (10 :: Double))
-  print $ toKiloJoules (KiloCalories (2000 :: Double))

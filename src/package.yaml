@@ -2,10 +2,15 @@ name: yesod-book
 
 dependencies:
   - base >= 4.17 && < 5
+  - units
+  - units-defs
 
 ghc-options:
   - -Wall
   - -Werror
+  - -threaded
+  - -rtsopts
+  - -O2
 
 library:
   source-dirs: .

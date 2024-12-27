@@ -11,6 +11,7 @@ build-type:     Simple
 library
   exposed-modules:
       Lib
+      Units
   other-modules:
       Paths_yesod_book
   hs-source-dirs:
@@ -18,4 +19,6 @@ library
   ghc-options: -Wall -Werror
   build-depends:
       base >=4.17 && <5
+    , units
+    , units-defs
   default-language: Haskell2010
