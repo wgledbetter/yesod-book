@@ -20,12 +20,14 @@ executable ex00
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -50,12 +52,14 @@ executable ex01
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -80,12 +84,14 @@ executable ex02
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -110,12 +116,14 @@ executable ex03
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -140,12 +148,14 @@ executable ex04
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -170,12 +180,14 @@ executable ex05
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -200,12 +212,14 @@ executable ex06
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -230,12 +244,14 @@ executable ex07
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -260,12 +276,14 @@ executable ex08
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -290,12 +308,14 @@ executable ex09
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -320,12 +340,14 @@ executable ex10
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
@@ -350,12 +372,14 @@ executable ex11
       TypeFamilies
   ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
-      base
+      aeson
+    , base
     , blaze-builder
     , blaze-html
     , conduit
     , containers
     , http-types
+    , random
     , shakespeare
     , stm
     , text
