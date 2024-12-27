@@ -53,3 +53,5 @@ executables:
     main: Ex08_Websockets.hs
   ex09:
     main: Ex09_Units.hs
+  ex10:
+    main: Ex10_NutFact.hs

@@ -16,7 +16,7 @@ library
       Paths_yesod_book
   hs-source-dirs:
       ./
-  ghc-options: -Wall -Werror
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
   build-depends:
       base >=4.17 && <5
     , units
