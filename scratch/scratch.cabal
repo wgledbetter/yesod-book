@@ -337,3 +337,33 @@ executable ex10
     , yesod-core
     , yesod-websockets
   default-language: Haskell2010
+
+executable ex11
+  main-is: Ex11_Websockets.hs
+  other-modules:
+      Paths_scratch
+  default-extensions:
+      TemplateHaskell
+      QuasiQuotes
+      OverloadedStrings
+      ViewPatterns
+      TypeFamilies
+  ghc-options: -Wall -Werror -threaded -rtsopts -O2
+  build-depends:
+      base
+    , blaze-builder
+    , blaze-html
+    , conduit
+    , containers
+    , http-types
+    , shakespeare
+    , stm
+    , text
+    , time
+    , units
+    , units-defs
+    , yesod
+    , yesod-book
+    , yesod-core
+    , yesod-websockets
+  default-language: Haskell2010
